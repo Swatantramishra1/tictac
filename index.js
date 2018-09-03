@@ -51,14 +51,6 @@ function renderMainGrid() {
     parent.innerHTML = '<div class="columnsStyle">' + columnDivs + '</div>';
 }
 
-function changePlayer() {
-    if (turn === 'X') {
-        turn = 'O';
-        return;
-    }
-    turn = 'X';
-}
-
 function onBoxClick() {
     var rowIdx = this.getAttribute("rowIdx");
     var colIdx = this.getAttribute("colIdx");
@@ -68,8 +60,6 @@ function onBoxClick() {
     }
     grid[colIdx][rowIdx] = newValue;
     renderMainGrid();
-    addClickHandlers();
-    changePlayer();
 }
 
 function addClickHandlers() {
