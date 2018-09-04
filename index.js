@@ -55,11 +55,9 @@ function onBoxClick() {
     var rowIdx = this.getAttribute("rowIdx");
     var colIdx = this.getAttribute("colIdx");
     let newValue = 1;
-    if (turn == 'O') {
-        newValue = 2;
-    }
     grid[colIdx][rowIdx] = newValue;
     renderMainGrid();
+    addClickHandlers();
 }
 
 function addClickHandlers() {
