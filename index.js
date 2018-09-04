@@ -1,3 +1,23 @@
+/**
+ * This program is a boliler plate code for the famous tic tac toe game
+ * Here box represents one placeholder for either X or a 0
+ * We have a 2D array to represent the arrangement of X or O is a grid
+ * 0 -> empty box
+ * 1 -> box with X
+ * 2 -> box with O
+ * 
+ * Below are the tasks which needs to be completed
+ * Imagine you are playing with Computer so every alternate move should be by Computer
+ * X -> player
+ * O -> Computer
+ * 
+ * Winner has to be decided and has to be flashed
+ * 
+ * Extra points will be given for the Creativity
+ * 
+ * Use of Google is not encouraged
+ * 
+ */
 const grid = [];
 const GRID_LENGTH = 3;
 let turn = 'X';
